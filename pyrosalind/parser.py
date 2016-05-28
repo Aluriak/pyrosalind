@@ -12,7 +12,7 @@ import pickle
 
 USERNAME_URL = 'http://rosalind.info/users/{}'
 FILE_CACHE = 'cache.pkl'
-# FILE_CACHE = None  # comment to enable dumb cache feature
+FILE_CACHE = None  # comment to enable dumb cache feature
 
 
 def problems(username:str) -> iter:
