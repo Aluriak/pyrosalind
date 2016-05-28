@@ -1,0 +1,6 @@
+*.vim
+*.pyc
+*.pkl
+__pycache__/
+venv/
+*.egg-info
