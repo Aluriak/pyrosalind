@@ -10,7 +10,9 @@ from urllib.request import urlopen
 import pickle
 
 
-USERNAME_URL = 'http://rosalind.info/users/{}'
+BASE_URL = 'http://rosalind.info/'
+USERNAME_URL    = BASE_URL + 'users/{}'
+
 FILE_CACHE = 'cache.pkl'
 FILE_CACHE = None  # comment to enable dumb cache feature
 
@@ -35,7 +37,6 @@ def _parse_problems(html:str) -> iter:
     page = BeautifulSoup(html, 'html.parser')
     for elem in page.find_all(**{'class':'badge'}):
         yield elem.string, elem['class'] == ['badge', 'badge-success']
-
 
 def _get_page(url:str) -> str:
     """Return raw html of given page"""
