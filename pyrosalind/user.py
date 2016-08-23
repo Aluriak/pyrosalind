@@ -30,7 +30,7 @@ class User:
     @staticmethod
     def from_name(name):
         """Parse ROSALIND directly to get all informations necessary"""
-        return User(name, (problem for problem in parser.problems(name)))
+        return User(name, parser.problems(name))
 
 
     def __str__(self):
