@@ -18,12 +18,15 @@ Use `pip install -r requirements.txt` to install the *beautiful soup* and *reque
 
 
 ## Retrieved data
-Input data is the username.
 
-- [X] problems solved
-- [ ] badges
-- [ ] achievements
-- [ ] source codes submitted for each problem
-- [ ] scores, statistics
-- [ ] global and country ranks
-- [ ] account details (last solvel, member for, country, time zone, language)
+- user related data (input is username)
+  - [X] problems solved
+  - [ ] badges
+  - [ ] achievements
+  - [ ] source codes submitted for each problem
+  - [ ] scores, statistics
+  - [ ] global and country ranks
+  - [ ] account details (last solvel, member for, country, time zone, language)
+- problem related data (input is problem id)
+  - [ ] problem names and scores
+  - [ ] problem dag
